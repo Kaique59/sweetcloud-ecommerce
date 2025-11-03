@@ -1,10 +1,12 @@
+<div align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/2569/2569198.png" width="120" alt="Ícone Bolo"/>
+</div>
+
 # ☁️ SweetCloud E-commerce
 
 **Site institucional e promocional da confeitaria SweetCloud**, criado com o objetivo de atrair novos clientes, apresentar produtos artesanais e facilitar o contato para encomendas.
 
 ✨ *Doces, experiências e sabor em um único lugar!*
-
-</div>
 
 ---
 
@@ -20,12 +22,28 @@ Este site foi desenvolvido para:
 
 ---
 
+## 👥 Equipe do Projeto
+
+| Nome                                         | Linguagens / Função                   |
+| --------------------------------------------| ------------------------------------|
+| [**Kaique**](https://github.com/Kaique59)   | HTML, CSS e JavaScript               |
+| [**Samira**](https://github.com/Samiihh)    | HTML, CSS, JavaScript e PHP          |
+| [**Guilherme**](https://github.com/guiidoo) | HTML, PHP e JavaScript               |
+| [**Andrey**](https://github.com/Andreyzc02) | HTML, CSS e JavaScript               |
+
+---
+
 ## 🧁 Tecnologias Utilizadas
 
-- **HTML5 / CSS3**  
-- **JavaScript** *(interatividade e efeitos)*  
-- **PHP** *(backend e requisições)*  
-- **MySQL** *(persistência de dados)*  
+<div align="center">
+
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)  
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)  
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
+[![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)  
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+
+</div>
 
 > Nenhum framework foi utilizado — o foco é ser leve, direto e totalmente didático.
 
@@ -64,6 +82,16 @@ Este site foi desenvolvido para:
 
 ---
 
+## 🎞️ Apresentação
+
+<div align="center">
+  <a href="https://www.canva.com/design/DAGoGXRVamc/7djJ2IrJlzcqBRaVTatNnw/edit?utm_content=DAGoGXRVamc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer">
+    <img src="img/apresentacao/apresentacao-sweetcloud.png" width="800" alt="Apresentação SweetCloud" />
+  </a>
+</div>
+
+---
+
 ## 🚀 Como Executar
 
 ```bash
@@ -88,18 +116,6 @@ Inclui:
 
 ---
 
-## 👥 Equipe do Projeto
-
-| Nome                                        | Linguagem                   |
-| ------------------------------------------- | --------------------------- |
-| [**Kaique**](https://github.com/Kaique59)   | HTML, CSS e JS              |
-| [**Samira**](https://github.com/Samiihh)    | HTML, CSS, JS e PHP         |
-| [**Guilherme**](https://github.com/guiidoo) | HTML, PHP e JS              |
-| [**Andrey**](https://github.com/Andreyzc02) | HTML, CSS e JS              |
-
-
----
-
 ## ✨ Frase da Marca
 
 > **SweetCloud oferece mais que bolos.**
@@ -115,14 +131,5 @@ Uso comercial é proibido sem autorização.
 ---
 
 <div align="center">
-
 Feito com dedicação, açúcar e muito café ☕
-
 </div>
-
----
-
-## 🎞️ Apresentação
-
-<div align="center"> <a href="https://www.canva.com/design/DAGoGXRVamc/7djJ2IrJlzcqBRaVTatNnw/edit?utm_content=DAGoGXRVamc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer">
-  <img src="img/apresentacao/apresentacao-sweetcloud.png" width="800" alt="Apresentação SweetCloud"/> </a> </div>
