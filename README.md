@@ -128,10 +128,8 @@ Feito com dedicação, açúcar e muito café ☕
 
 ## 🎞️ Apresentação
 
-<div align="center">
-
-<a href="https://www.canva.com/design/DAGoGXRVamc/7djJ2IrJlzcqBRaVTatNnw/edit?utm_content=DAGoGXRVamc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer">
-  <img src="SweetCloud/img/apresentacao/apresentacao-sweetcloud.png" width="800" alt="Apresentação SweetCloud" />
-</a>
-
-</div>
+<p align="center">
+  <a href="https://www.canva.com/design/DAGoGXRVamc/7djJ2IrJlzcqBRaVTatNnw/edit?utm_content=DAGoGXRVamc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer">
+    <img src="img/apresentacao/apresentacao-sweetcloud.png" width="800" alt="Apresentação SweetCloud" />
+  </a>
+</p>
