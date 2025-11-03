@@ -1,6 +1,6 @@
-<div align="center">
-
-<img src="https://cdn-icons-png.flaticon.com/512/2569/2569198.png" width="120"/>
+<p align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/2569/2569198.png" width="120" alt="Ícone Bolo"/>
+</p>
 
 # ☁️ SweetCloud E-commerce
 
