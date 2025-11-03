@@ -94,12 +94,13 @@ Inclui:
 
 ## 👥 Equipe do Projeto
 
-| Nome                                        
-| ------------------------------------------- 
-| [**Kaique**](https://github.com/Kaique59)   
-| [**Samira**](https://github.com/Samiihh)    
-| [**Guilherme**](https://github.com/guiidoo) 
-| [**Andrey**](https://github.com/Andreyzc02) 
+| Nome                                        | Linguagem                   |
+| ------------------------------------------- | --------------------------- |
+| [**Kaique**](https://github.com/Kaique59)   | HTML, CSS e JS              |
+| [**Samira**](https://github.com/Samiihh)    | HTML, CSS, JS e PHP         |
+| [**Guilherme**](https://github.com/guiidoo) | HTML, PHP e JS              |
+| [**Andrey**](https://github.com/Andreyzc02) | HTML, CSS e JS              |
+
 
 ---
 
@@ -119,7 +120,7 @@ Uso comercial é proibido sem autorização.
 
 <div align="center">
 
-Feito com 💗, açúcar e muito café ☕
+Feito com dedicação, açúcar e muito café ☕
 
 </div>
 
@@ -130,7 +131,7 @@ Feito com 💗, açúcar e muito café ☕
 <div align="center">
 
 <a href="https://www.canva.com/design/DAGoGXRVamc/7djJ2IrJlzcqBRaVTatNnw/edit?utm_content=DAGoGXRVamc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer">
-  <img src="./img/apresentacao/apresentacao-sweetcloud.png" width="800" alt="Apresentação SweetCloud"/>
+  <img src="SweetCloud/img/apresentacao/apresentacao-sweetcloud.png" width="800" alt="Apresentação SweetCloud" />
 </a>
 
 </div>
