@@ -80,12 +80,6 @@ cd SweetCloud
 # Mova para o servidor local (XAMPP/WAMP/LAMP)
 ````
 
-Acesse pelo navegador:
-
-```
-http://localhost/SweetCloud/public
-```
-
 ---
 
 ## 📞 Site Institucional + Suporte
@@ -100,12 +94,12 @@ Inclui:
 
 ## 👥 Equipe do Projeto
 
-| Desenvolvedor | Função                      | GitHub                                       |
-| ------------- | --------------------------- | -------------------------------------------- |
-| **Kaique**    | Full Stack & Responsividade | [@Kaique59](https://github.com/Kaique59)     |
-| **Samira**    | Conteúdo & UX               | [@Samiihh](https://github.com/Samiihh)       |
-| **Guilherme** | Backend & Banco de Dados    | [@guiidoo](https://github.com/guiidoo)       |
-| **Andrey**    | Frontend                    | [@Andreyzc02](https://github.com/Andreyzc02) |
+| Nome                                        
+| ------------------------------------------- 
+| [**Kaique**](https://github.com/Kaique59)   
+| [**Samira**](https://github.com/Samiihh)    
+| [**Guilherme**](https://github.com/guiidoo) 
+| [**Andrey**](https://github.com/Andreyzc02) 
 
 ---
 
@@ -136,7 +130,7 @@ Feito com 💗, açúcar e muito café ☕
 <div align="center">
 
 <a href="https://www.canva.com/design/DAGoGXRVamc/7djJ2IrJlzcqBRaVTatNnw/edit?utm_content=DAGoGXRVamc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer">
-  <img src="img/apresentacao/apresentacao-sweetcloud.png" width="800" alt="Apresentação SweetCloud"/>
+  <img src="./img/apresentacao/apresentacao-sweetcloud.png" width="800" alt="Apresentação SweetCloud"/>
 </a>
 
 </div>
