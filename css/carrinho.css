@@ -1,0 +1,1079 @@
+:root {
+  --cor-fundo-claro: #FFF5CC;
+  /* Amarelo claro do fundo */
+  --cor-marrom-claro: #BB9977;
+  /* Marrom claro dos cards */
+  --cor-marrom-medio: #8B6E50;
+  /* Marrom dos botões e texto */
+  --cor-marrom-escuro: #6B543D;
+  /* Marrom mais escuro */
+  --sombra-card: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.observacoes-container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Alinha à esquerda */
+  /* Alinha com os cards do carrinho */
+}
+
+.observacoes-form {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.observacoes-btn {
+  background-color: var(--cor-marrom-medio);
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: var(--sombra-card);
+  transition: background-color 0.3s;
+}
+
+.observacoes-btn:hover {
+  background-color: var(--cor-marrom-escuro);
+}
+
+.observacoes-box {
+  margin-top: 10px;
+  width: 90%;
+}
+
+.observacoes-box textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--cor-marrom-claro);
+  resize: vertical;
+  background-color: #fffef9;
+  color: var(--cor-marrom-escuro);
+  box-shadow: var(--sombra-card);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: var(--cor-fundo-claro);
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: var(--sombra-card);
+  font-family: Arial, sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.modal-logo {
+  display: block;
+  margin: 0 auto 10px auto;
+  max-width: 150px;
+}
+
+.modal-titulo {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: var(--cor-marrom-escuro);
+}
+
+.modal-resumo p {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  color: var(--cor-marrom-escuro);
+}
+
+.total-pedido {
+  font-weight: bold;
+  margin-top: 10px;
+  border-top: 1px solid var(--cor-marrom-claro);
+  padding-top: 10px;
+}
+
+.modal-endereco {
+  background-color: var(--cor-marrom-claro);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.modal-endereco button {
+  margin-top: 10px;
+  width: 100%;
+  margin-left: 0;
+}
+
+.modal-pagamento {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.modal-pagamento button {
+  display: block;
+  margin: 10px auto;
+  width: 80%;
+}
+
+.modal-contato {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--cor-marrom-escuro);
+  margin-top: 15px;
+}
+
+/* ====== MODAL – PEÇA ONLINE (btnOnline) ====== */
+.modal-endereco-online {
+  background: var(--cor-marrom-claro);
+  color: #fff;
+  padding: 14px 12px 18px;
+  border-radius: 10px;
+  margin: 18px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label-endereco {
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+.input-endereco {
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 6px;
+  background: #fffef9;
+  font-size: .9rem;
+  color: var(--cor-marrom-escuro);
+}
+
+.input-endereco select {
+  appearance: none;
+  background: #fffef9;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: .9rem;
+  color: var(--cor-marrom-escuro);
+  border: none;
+}
+
+.input-endereco::placeholder {
+  color: #9c8a70
+}
+
+
+.carrinho-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 60px;
+  background-color: white;
+}
+
+.itens-carrinho-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  height: 600px;
+  background-color: var(--cor-fundo-claro);
+  box-shadow: var(--sombra-card);
+  /* Ocupa toda a largura disponível */
+  overflow-y: auto;
+  /* Aqui entra o scroll geral */
+  padding: 20px;
+  scroll-behavior: smooth;
+  gap: 10px;
+}
+
+
+.itens-carrinho-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.itens-carrinho-container::-webkit-scrollbar-thumb {
+  background-color: var(--cor-marrom-claro);
+  border-radius: 4px;
+}
+
+.itens-carrinho-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.divisoria {
+  width: 2px;
+  background-color: var(--cor-marrom-escuro);
+  height: 100%;
+  align-self: stretch;
+}
+
+/* ======================================================================
+   CARD DO CARRINHO (imagem, texto, quantidade, comprar, excluir)       */
+.item-card {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  background-color: #a68c78;
+  color: #fff;
+  border-radius: 24px;
+  width: 650px;
+  position: relative;
+  /* Manter para o botão de excluir se for position absolute */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  /* Adicionar padding geral ao card */
+  align-items: center;
+  /* Alinhar a imagem e o info no centro vertical */
+  margin-left: 20px;
+}
+
+
+/* imagem -------------------------------------------------------------- */
+.item-imagem {
+  width: 170px;
+  height: 165px;
+  background-color: white;
+  object-fit: cover;
+  border-radius: 12px;
+
+}
+
+.item-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Adicionar um flex container para as informações */
+.item-info {
+  display: flex;
+  flex-direction: column;
+  /* Coloca os itens um abaixo do outro */
+  flex-grow: 1;
+  /* Permite que o item-info ocupe o espaço restante */
+  justify-content: space-between;
+  /* Distribui o espaço entre os itens */
+  width: 45%;
+  height: 100%;
+  /* Ocupa a altura total do card para que space-between funcione */
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  /* Coloca nome e excluir nas pontas */
+  align-items: center;
+  /* Alinha verticalmente */
+  width: 100%;
+  /* Ocupa toda a largura disponível */
+  margin-bottom: 10px;
+  /* Espaço abaixo do cabeçalho */
+}
+
+/* textos -------------------------------------------------------------- */
+.item-nome {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+  position: relative;
+  left: 5%;
+  margin: 5px;
+}
+
+.item-descricao {
+  font-size: 0.9rem;
+  line-height: 1.35;
+  position: relative;
+  left: 5%;
+  width: 400px;
+  text-align: center;
+  flex-grow: 1;
+  /* Permite que a descrição ocupe o espaço restante */
+  display: flex;
+  align-items: center;
+  /* Centraliza verticalmente o texto dentro da descrição */
+  justify-content: center;
+  /* Centraliza horizontalmente o texto */
+}
+
+.item-preco {
+  font-size: 1.1rem;
+  font-weight: 600;
+  /* position: relative; left: 6%; margin: 4px; */
+  /* REMOVER ESTAS LINHAS */
+  text-align: center;
+  /* Centraliza o preço */
+}
+
+/* quantidade + comprar ----------------------------------------------- */
+.item-quantidade-compra {
+  width: 100%;
+  /* Ocupa a largura total do item-info */
+  display: flex;
+  justify-content: center;
+  /* Centraliza os botões */
+  align-items: center;
+  position: relative;
+  left: 5%;
+  gap: 90px;
+  /* Espaço entre a quantidade e o botão de comprar */
+}
+
+.item-quantidade {
+  display: flex;
+  /* Transforma em flex para alinhar os botões e valor */
+  align-items: center;
+  gap: 8px;
+  /* position: absolute; left: -10%; */
+  /* REMOVER ESTAS LINHAS */
+}
+
+.item-excluir {
+  /* position:absolute; top:8px; right:8px; */
+  /* REMOVER ESTAS LINHAS para que ele flua com o item-header */
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: #f8f4b4;
+  color: #715f3a;
+  font-size: 1.4rem;
+  line-height: 34px;
+  cursor: pointer;
+  display: flex;
+  /* Para centralizar o "x" */
+  justify-content: center;
+  align-items: center;
+}
+
+.quantidade-btn {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: #F8F4B4;
+  /* amarelo‑claro */
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #715F3A;
+}
+
+.quantidade-valor {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-content: center;
+  background: #fff;
+  color: #715F3A;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+
+
+/* botão excluir ------------------------------------------------------- */
+.item-excluir {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: #F8F4B4;
+  color: #715F3A;
+  font-size: 1.4rem;
+  line-height: 34px;
+  cursor: pointer;
+}
+
+
+.observacoes-container {
+  margin-top: 20px;
+  /* Espaço entre os cards e o botão de observações */
+  text-align: center;
+  /* Centraliza o botão */
+  margin-left: 20px;
+}
+
+.observacoes-btn {
+  background-color: var(--cor-marrom-medio);
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: var(--sombra-card);
+  display: block;
+  /* Para que margin: auto funcione */
+  margin: 20px 0 0 20px;
+  /* Adicionado margem para alinhar com o lado esquerdo */
+}
+
+.resumo-carrinho {
+  background-color: var(--cor-fundo-claro);
+  width: 300px;
+  height: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: var(--sombra-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0;
+  /* Impede que a sidebar encolha */
+}
+
+.logo-sweetcloud img {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.opcoes-entrega {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.opcao-btn {
+  background-color: #a68c78;
+  color: #f8f4b4;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 80%;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.ou {
+  color: var(--cor-marrom-medio);
+  font-weight: bold;
+}
+
+.cupom-desconto {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.cupom-desconto p {
+  color: var(--cor-marrom-medio);
+  margin-bottom: 5px;
+}
+
+.cupom-input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid var(--cor-marrom-medio);
+  border-radius: 20px;
+  padding: 5px 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cupom-input {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  padding: 5px;
+  font-size: 0.9em;
+}
+
+.cupom-enviar {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%238B6E50"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>') no-repeat center center;
+  background-size: 20px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.continuar-btn {
+  background-color: var(--cor-marrom-escuro);
+  color: #f8f4b4;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-top: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+
+  .item-card {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    background-color: #a68c78;
+    color: #fff;
+    border-radius: 24px;
+    width: 80%;
+    height: auto;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    align-items: center;
+    /* margin-left: 20px; */
+    flex-direction: column;
+  }
+
+  .item-excluir {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 50%;
+    background: #F8F4B4;
+    color: #715F3A;
+    font-size: 1.4rem;
+    line-height: 34px;
+    cursor: pointer;
+  }
+
+  .item-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .item-descricao {
+    font-size: 0.9rem;
+    line-height: 1.35;
+    position: relative;
+    /* left: 5%; */
+    width: 80%;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .item-quantidade-compra {
+    width: 358px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* left: 5%; */
+    gap: 10px;
+    margin: 10px;
+  }
+
+  .comprar-btn {
+    /* margin-left: auto; */
+    border: none;
+    padding: 15px 40px;
+    border-radius: 26px;
+    background: #f8f4b4;
+    color: #715f3a;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    /* position: relative; */
+    /* bottom: 22px; */
+    margin: 10px;
+  }
+
+}
+
+@media (min-width: 670px) and (max-width: 900px) {
+
+  .item-card {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    background-color: #a68c78;
+    color: #fff;
+    border-radius: 24px;
+    width: 80%;
+    height: auto;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    align-items: center;
+    /* margin-left: 20px; */
+    flex-direction: column;
+  }
+
+  .item-excluir {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 50%;
+    background: #F8F4B4;
+    color: #715F3A;
+    font-size: 1.4rem;
+    line-height: 34px;
+    cursor: pointer;
+  }
+
+  .item-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .item-descricao {
+    font-size: 0.9rem;
+    line-height: 1.35;
+    position: relative;
+    /* left: 5%; */
+    width: 80%;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .item-quantidade-compra {
+    width: 358px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* left: 5%; */
+    gap: 10px;
+    margin: 10px;
+  }
+
+  .comprar-btn {
+    /* margin-left: auto; */
+    border: none;
+    padding: 15px 40px;
+    border-radius: 26px;
+    background: #f8f4b4;
+    color: #715f3a;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    /* position: relative; */
+    /* bottom: 22px; */
+    margin: 10px;
+  }
+
+  .carrinho-container {
+    display: flex
+;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px;
+    background-color: white;
+}
+
+}
+
+/* Responsividade básica (ajuste conforme necessário) */
+@media (max-width: 769px) {
+  .carrinho-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .itens-carrinho {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .resumo-carrinho {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .item-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .item-imagem {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .item-quantidade-compra {
+    justify-content: center;
+  }
+
+  .comprar-btn {
+    margin-left: 0;
+    /* Centraliza o botão comprar */
+  }
+
+  .item-excluir {
+    position: static;
+    /* Volta para o fluxo normal do layout */
+    margin-top: 10px;
+  }
+
+  .itens-carrinho-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+    background-color: var(--cor-fundo-claro);
+    box-shadow: var(--sombra-card);
+    overflow-y: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+    gap: 10px;
+}
+
+.item-card {
+    margin-top: 20px;
+    /* display: flex; */
+    gap: 20px;
+    background-color: #a68c78;
+    color: #fff;
+    border-radius: 24px;
+    width: 350px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.item-imagem {
+    width: 80%;
+    height: 165px;
+    background-color: white;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.item-descricao {
+    font-size: 0.9rem;
+    line-height: 1.35;
+    position: relative;
+    /* left: 5%; */
+    width: 90%;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.item-quantidade {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px;
+}
+
+.item-excluir {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+
+
+  .itens-carrinho-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+    background-color: var(--cor-fundo-claro);
+    box-shadow: var(--sombra-card);
+    overflow-y: auto;
+    padding: 10px;
+    scroll-behavior: smooth;
+    gap: 10px;
+}
+
+      .item-card {
+        /* margin-top: 20px; */
+        display: flex;
+        gap: 20px;
+        background-color: #a68c78;
+        color: #fff;
+        border-radius: 24px;
+        width: 340px;
+        /* position: relative; */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+        padding: 16px;
+        align-items: center;
+        /* margin-left: 20px; */
+    }
+
+    .item-excluir {
+        position: absolute;
+        right: 10px;
+    }
+
+}
+
+    .item-descricao {
+    font-size: 0.9rem;
+    line-height: 1.35;
+    position: relative;
+    left: 5%;
+    width: 90%;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.item-quantidade {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px;
+}
+  
+
+@media (min-width: 320px) and (max-width: 599px) {
+
+  .modal-content {
+    background-color: var(--cor-fundo-claro);
+    /* padding: 30px; */
+    border-radius: 20px;
+    width: 90%;
+    max-width: 300px;
+    box-shadow: var(--sombra-card);
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+
+  .fechar-modal {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .modal-body {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .modal_itens {
+    background-color: #a68c78;
+    border-radius: 15px;
+    flex: 1;
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .DcrModal {
+    font-size: 13px;
+    color: white;
+    text-align: center;
+  }
+
+  .btn-adicionar {
+    padding: 8px 10px;
+    background-color: #f3e4b2;
+    color: #3d2e1f;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: auto;
+    transition: background-color 0.3s;
+    position: relative;
+    right: -5px;
+    bottom: -5px;
+  }
+
+  .carrinho-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .itens-carrinho-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+    background-color: var(--cor-fundo-claro);
+    box-shadow: var(--sombra-card);
+    overflow-y: auto;
+    padding: 15px;
+    scroll-behavior: smooth;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .item-card {
+    margin-top: 20px;
+    /* display: flex; */
+    gap: 20px;
+    background-color: #a68c78;
+    color: #fff;
+    border-radius: 24px;
+    width: 300px;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    align-items: center;
+    margin-left: 0px;
+  }
+
+  .item-imagem {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .item-excluir {
+    position: absolute;
+    top: 0px;
+    right: 8px;
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 50%;
+    background: none;
+    color: #715F3A;
+    font-size: 30px;
+    line-height: 34px;
+    cursor: pointer;
+  }
+
+  .item-info {
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 1; */
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+
+  .item-descricao {
+    font-size: 0.9rem;
+    line-height: 1.35;
+    position: relative;
+    /* left: 5%; */
+    width: 260px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+  }
+
+  .item-preco {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .item-quantidade {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 5px;
+  }
+
+}
+
+/* Reaproveita os mesmos estilos base do modal-overlay,
+   modal-content, modal-logo, modal-titulo, modal-resumo,
+   .total-pedido, .modal-pagamento, .modal-contato etc.    */

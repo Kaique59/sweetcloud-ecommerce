@@ -1,0 +1,137 @@
+.container-nossaHitoria {
+    padding: 60px 0;
+}
+
+.nossa-historia {
+    padding: 60px 20px;
+    border-radius: 80px 80px 0px 0px;
+    color: #3d2e1f;
+    text-align: center;
+    background: rgba(255, 251, 180, 0.40);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nossa-historia h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-style: italic;
+    font-weight: bold;
+    color: #3d2e1f;
+}
+
+.historia-topo {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.historia-img img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bloco-texto {
+    background-color: rgba(156, 132, 104, 0.6);
+    padding: 20px 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.historia-rodape {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+
+@media  (max-width: 768px) {
+    .nossa-historia{
+        border-radius: 50px 50px 0px 0px;
+    }
+
+    .historia-topo{
+        display: block;
+
+    }
+    .bloco-texto {
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 599px) {
+
+    .nossa-historia {
+        font-family: 'Segoe UI', sans-serif;
+        color: #3d2e1f;
+        text-align: center;
+        padding: 40px 20px;
+        border-radius: 30px 30px 0px 0px;
+        background: rgba(255, 251, 180, 0.40);
+    }
+
+    .nossa-historia h2 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        font-style: italic;
+        font-weight: bold;
+        color: #3d2e1f;
+    }
+
+    .historia-img img {
+        max-width: 400px;
+        width: 90%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .historia-topo {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .bloco-texto {
+        background-color: rgba(156, 132, 104, 0.6);
+        padding: 20px 20px;
+        border-radius: 15px;
+        text-align: center;
+        max-width: 600px;
+    }
+
+    .bloco-texto p {
+        font-size: 20px;
+    }
+
+    .historia-rodape {
+        margin: 0 auto;
+        max-width: 900px;
+    }
+
+}
+
+@media (max-width:1201) {
+
+    .historia-img img {
+        max-width: 750PX;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    }
+
+}

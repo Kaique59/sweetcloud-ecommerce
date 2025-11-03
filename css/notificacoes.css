@@ -1,0 +1,65 @@
+:root {
+    --cor-fundo: #FFFCC4; 
+    --cor-card: #FDF5BE;
+    --cor-borda-card: #B2946D;
+    --cor-texto: #5A3E2B;
+}
+
+.menu-lateral a {
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
+.conteudo {
+    flex: 2;
+    padding-left: 40px;
+    color: var(--cor-texto);
+}
+
+.conteudo h2 {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+}
+
+.card-dados {
+    background-color: var(--cor-card);
+    border: 12px solid var(--cor-borda-card);
+    padding: 25px;
+    border-radius: 20px;
+    color: var(--cor-texto);
+    box-sizing: border-box;
+}
+
+.card-dados label {
+    display: flex;
+    align-items: center;
+    font-size: 1.25em;
+    margin-bottom: 18px;
+}
+
+.card-dados input[type="checkbox"] {
+    margin-right: 12px;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    accent-color: #4CAF50;
+    flex-shrink: 0;
+}
+
+
+@media (max-width: 768px) {
+    .painel-usuario {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .menu-lateral {
+        border-right: none;
+        border-bottom: 2px solid var(--cor-borda-card);
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    .conteudo {
+        padding-left: 0;
+    }
+}

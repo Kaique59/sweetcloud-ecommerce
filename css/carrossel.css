@@ -1,0 +1,84 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    /* Aumentado para dar mais espaço */
+    margin: 70px auto 0;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-img {
+    width: 100%;
+    height: auto;
+    /* A altura se ajusta automaticamente */
+    flex-shrink: 0;
+    object-fit: cover;
+    /* Mantém o corte para preencher, mas a altura será proporcional */
+    display: block;
+}
+
+
+/* Indicadores */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    /* Ajustei a posição para ficar sobre a imagem, como discutimos anteriormente */
+    position: absolute;
+    bottom: 20px;
+    /* Distância do fundo da imagem */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centraliza horizontalmente */
+    z-index: 10;
+    /* Garante que os dots fiquem acima da imagem */
+    gap: 10px;
+    /* Aumentei um pouco o espaçamento para ficarem mais visíveis */
+}
+
+.dot {
+    width: 136.094px;  
+    height: 7px;
+    background: #D9D9D9;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    opacity: 1;
+    /* Mantenho a opacidade total, a distinção será pela cor/fundo */
+}
+
+.dot.active {
+    background: #565656;
+    width: 136.094px;
+    height: 7px;
+}
+
+/* Você pode adicionar um efeito hover opcional para os dots inativos */
+.dot:not(.active):hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Um leve brilho branco no hover */
+}
+
+
+/* Responsividade - Mantenha os ajustes para telas menores */
+@media (max-width: 768px) {
+    .carousel-indicators {
+        bottom: 10px;
+        /* Ajuste a posição dos dots em telas menores */
+        gap: 8px;
+        /* Ajuste o espaçamento para telas menores se necessário */
+    }
+
+    .dot {
+        width: 20px;
+        height: 5px;
+    }
+
+    .dot.active {
+        width: 30px;
+    }
+}

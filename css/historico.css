@@ -1,0 +1,16 @@
+.tabela-historico {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.tabela-historico th, .tabela-historico td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabela-historico th {
+    background-color: #e8ddb0;
+    font-weight: bold;
+}

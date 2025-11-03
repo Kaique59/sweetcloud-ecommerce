@@ -1,0 +1,326 @@
+/* Variáveis CSS para cores e sombras, facilitando a manutenção */
+:root {
+    --cor-fundo-claro: #FFF5CC; /* Amarelo claro do fundo */
+    --cor-marrom-claro: #BB9977; /* Marrom claro do card */
+    --cor-marrom-medio: #8B6E50; /* Marrom dos botões e texto */
+    --cor-marrom-escuro: #6B543D; /* Marrom mais escuro para texto */
+    --sombra-card: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos globais para o corpo da página */
+.body-cadastro {
+    margin: 0;
+    font-family: 'Inter', sans-serif; /* Usando Inter, como instruído, ou Arial como fallback */
+    background-color: var(--cor-fundo-claro);
+    display: flex; /* Alterado de block para flex para centralizar o container */
+    flex-direction: column;
+    align-items: center;
+    color: var(--cor-marrom-escuro);
+    min-height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura/altura */
+}
+
+/* Container principal para centralizar todo o conteúdo */
+.container-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px; /* Aumentei o max-width para acomodar melhor os campos lado a lado */
+    padding: 20px;
+    box-sizing: border-box;
+    flex-grow: 1; /* Permite que o container cresça para ocupar o espaço disponível */
+}
+
+/* Estilo do cabeçalho com o logo */
+.header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    max-width: 250px; /* Ajuste o tamanho do logo conforme necessário */
+    height: auto;
+    border-radius: 8px; /* Cantos arredondados para o logo */
+}
+
+/* Conteúdo principal, centralizando o card */
+.main-content {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    flex-grow: 1; /* Permite que o main-content cresça */
+}
+
+.card-cadastro {
+    background-color: var(--cor-marrom-claro);
+    border-radius: 15px;
+    padding: 30px 40px;
+    box-shadow: var(--sombra-card);
+    width: 100%;
+    /*max-width: 800px; /* Mantido o max-width para o card */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    max-height: 650px;  /*Aumentado de 500px para 650px */
+     overflow-y: auto; /* Comentado para evitar scrollbar interno desnecessário em telas maiores */
+    scrollbar-width: none;       /* Firefox */
+    -ms-overflow-style: none;    /* IE/Edge */
+    display: flex; /* Adicionado flexbox para organizar o conteúdo interno */
+    flex-direction: column;
+}
+
+/* Oculta barra de rolagem no Chrome, Safari, etc. */
+.card-cadastro::-webkit-scrollbar {
+    display: none;
+}
+
+/* Efeito hover: sobe levemente */
+.card-cadastro:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-cadastro h2 {
+    color: var(--cor-marrom-escuro);
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+/* Estilos para o formulário de cadastro */
+.cadastro-form {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    gap: 15px 20px; /* Gap entre linhas (15px) e entre colunas (20px) */
+    text-align: left;
+    width: 100%;
+}
+
+.input-group {
+    margin-bottom: 0; /* Removido margin-bottom para usar o gap do flexbox */
+    flex: 1 1 100%; /* Por padrão, ocupa 100% da largura em telas menores */
+    box-sizing: border-box;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9em;
+    color: var(--cor-marrom-escuro);
+    margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="password"],
+.input-group input[type="tel"],
+.input-group input[type="date"] {
+    width: 100%; /* Ocupa 100% do seu container pai */
+    padding: 12px 10px;
+    border: 1px solid var(--cor-marrom-medio);
+    border-radius: 8px; /* Cantos arredondados para os inputs */
+    font-size: 1em;
+    background-color: white;
+    color: var(--cor-marrom-escuro);
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+.input-group input::placeholder {
+    color: #aaaaaa;
+}
+
+.group-inputs, .group-inputs1 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os inputs dentro do grupo quebrem */
+    gap: 15px; /* Espaçamento entre os inputs */
+    width: 100%; /* Ocupa a largura total do card */
+}
+
+/* Para CPF e Telefone (e Número/Complemento) */
+.group-inputs1 .input-group,
+.group-inputs .input-group {
+    flex: 1; /* Permite que os itens dentro do grupo dividam o espaço igualmente */
+    min-width: calc(50% - 7.5px); /* Garante que não fiquem muito pequenos antes de quebrar */
+}
+
+/* Estilo para o botão de cadastro */
+.btn-cadastrar {
+    background-color: var(--cor-marrom-medio);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px; /* Cantos bem arredondados */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    width: 100%; /* Ocupa a largura total do card */
+    box-sizing: border-box;
+}
+
+.btn-cadastrar:hover {
+    background-color: var(--cor-marrom-escuro);
+}
+
+/* Separador "OU" */
+.separator {
+    color: var(--cor-marrom-medio);
+    margin: 25px 0;
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%; /* Ocupa a largura total */
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: var(--cor-marrom-medio);
+}
+
+.separator::before {
+    left: 0;
+}
+
+.separator::after {
+    right: 0;
+}
+
+/* Estilos para os botões de login social */
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 8px; /* Cantos arredondados */
+    border: 1px solid #ccc;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    width: 100%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.btn-social i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.btn-social.google {
+    background-color: white;
+    color: #4285F4; /* Cor do Google */
+    border-color: #dbdbdb;
+}
+
+.btn-social.google:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-social.apple {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.btn-social.apple:hover {
+    background-color: #333;
+}
+
+/* Texto "Já tem uma conta?" */
+.ja-tem-conta {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: var(--cor-marrom-escuro);
+}
+
+.ja-tem-conta a {
+    color: var(--cor-marrom-medio);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ja-tem-conta a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    color: var(--cor-marrom-escuro);
+    font-size: 0.8em;
+    padding-bottom: 20px; /* Adicionado padding para que o conteúdo não fique colado no fim da tela */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .container-cadastro {
+        padding: 15px;
+    }
+
+    .card-cadastro {
+        padding: 20px;
+        max-width: 100%; /* Ocupa a largura total disponível */
+    }
+
+    .cadastro-form {
+        flex-direction: column; /* Coloca todos os grupos de inputs em coluna */
+        gap: 15px; /* Ajusta o espaçamento quando em coluna */
+    }
+
+    .group-inputs, .group-inputs1 {
+        flex-direction: column; /* Coloca os inputs dentro dos grupos em coluna */
+        gap: 15px;
+    }
+
+    .group-inputs .input-group,
+    .group-inputs1 .input-group {
+        min-width: 100%; /* Ocupa 100% da largura em telas menores */
+    }
+
+    .btn-cadastrar,
+    .btn-social {
+        font-size: 1em;
+        padding: 12px;
+    }
+
+    .card-cadastro h2 {
+        font-size: 1.5em;
+    }
+
+    .footer {
+        margin-top: 20px;
+        font-size: 0.75em;
+    }
+}
+
+/* Opcional: Ajuste para telas muito pequenas, caso necessário */
+@media (max-width: 480px) {
+    .card-cadastro {
+        padding: 15px;
+    }
+
+    .card-cadastro h2 {
+        font-size: 1.3em;
+    }
+
+    .btn-cadastrar,
+    .btn-social {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}

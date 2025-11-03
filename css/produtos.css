@@ -1,0 +1,1011 @@
+@media (min-width: 1201px) {
+
+  .produtos {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .produtos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-style: italic;
+    color: #3d2e1f;
+  }
+
+  .grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  .card-produto {
+    background-color: #a68c78;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 95%;
+    max-width: 370px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease;
+    box-sizing: border-box;
+    margin-top: 30px;
+  }
+
+  .card-produto:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-produto p {
+    color: white;
+    font-size: 20px;
+  }
+
+  .img-produto img {
+    width: 190px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #fff;
+    display: block;
+  }
+
+  .nome-produto {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .btn-vermais {
+    background-color: #f1e6b5;
+    color: #3d2e1f;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 16px;
+  }
+
+  .btn-vermais:hover {
+    background-color: #e6d894;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  .modal-overlay.is-open {
+    display: flex;
+  }
+
+  .modal-produto {
+    background-color: #f8efb5;
+    border-radius: 20px;
+    padding: 20px;
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .fechar-modal {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .modal-body {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .modal_img {
+    background-color: white;
+    max-width: 200px;
+    max-height: 200px;
+    height: 180px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .modal_itens {
+    background-color: #a68c78;
+    border-radius: 15px;
+    flex: 1;
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .nomeModal {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  .DcrModal {
+    font-size: 13px;
+    color: white;
+  }
+
+  .modalPreco {
+    font-weight: bold;
+    font-size: 15px;
+    color: #f3e4b2;
+  }
+
+  .quantidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .quantidade button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    background-color: #f3e4b2;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  #quantidade-valor {
+    background-color: white;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+    color: #3d2e1f;
+  }
+
+  .btn-adicionar {
+    padding: 10px 20px;
+    background-color: #f3e4b2;
+    color: #3d2e1f;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: auto;
+    transition: background-color 0.3s;
+    position: absolute;
+    right: 28px;
+    bottom: 42px;
+    margin-right: 5px;
+
+  }
+
+}
+
+@media (min-width: 901px) and (max-width:1200px) {
+
+  .produtos {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .produtos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-style: italic;
+    color: #3d2e1f;
+  }
+
+  .grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  .card-produto {
+    background-color: #a68c78;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 95%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease;
+    box-sizing: border-box;
+    margin-top: 30px;
+  }
+
+  .card-produto:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-produto p {
+    color: white;
+    font-size: 20px;
+  }
+
+  .img-produto img {
+    width: 190px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #fff;
+    display: block;
+  }
+
+  .nome-produto {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .btn-vermais {
+    background-color: #f1e6b5;
+    color: #3d2e1f;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 16px;
+  }
+
+  .btn-vermais:hover {
+    background-color: #e6d894;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  .modal-overlay.is-open {
+    display: flex;
+  }
+
+  .modal-produto {
+    background-color: #f8efb5;
+    border-radius: 20px;
+    padding: 20px;
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .fechar-modal {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .modal-body {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .modal_img {
+    background-color: white;
+    max-width: 200px;
+    max-height: 200px;
+    height: 180px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .modal_itens {
+    background-color: #a68c78;
+    border-radius: 15px;
+    flex: 1;
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .nomeModal {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  .DcrModal {
+    font-size: 13px;
+    color: white;
+  }
+
+  .modalPreco {
+    font-weight: bold;
+    font-size: 15px;
+    color: #f3e4b2;
+  }
+
+  .quantidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .quantidade button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    background-color: #f3e4b2;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  #quantidade-valor {
+    background-color: white;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+    color: #3d2e1f;
+  }
+
+  .btn-adicionar {
+    padding: 10px 20px;
+    background-color: #f3e4b2;
+    color: #3d2e1f;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: auto;
+    transition: background-color 0.3s;
+    position: relativ;
+    margin-right: 5px;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+
+  .grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Uma coluna por linha */
+    justify-items: center;
+    /* Centraliza os cards na grid */
+    gap: 10px;
+    /* Espaço entre os cards */
+  }
+
+  .produtos {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .produtos h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-style: italic;
+    color: #3d2e1f;
+  }
+
+  .btn-adicionar:hover {
+    background-color: #e6d894;
+  }
+
+  .card-produto {
+    background-color: #a68c78;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 360px;
+    width: 90%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease;
+    box-sizing: border-box;
+    margin-top: 30px;
+  }
+
+  .img-produto img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #fff;
+    display: block;
+  }
+
+  .card-produto p {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .btn-vermais {
+    background-color: #f1e6b5;
+    color: #3d2e1f;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 20px;
+    margin: 20px;
+  }
+
+  .modal-produto {
+    background-color: #f8efb5;
+    border-radius: 20px;
+    padding: 15px;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .modal_img {
+    background-color: white;
+    width: 75%;
+    height: 180px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    /* Centraliza horizontalmente */
+  }
+
+  .modal_img img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .fechar-modal {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .modal_itens {
+    background-color: #a68c78;
+    border-radius: 15px;
+    flex: 1;
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .DcrModal {
+    font-size: 13px;
+    color: white;
+    text-align: center;
+  }
+
+  .quantidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  .quantidade button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    background-color: #f3e4b2;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  #quantidade-valor {
+    background-color: white;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+    color: #3d2e1f;
+  }
+
+  .btn-adicionar {
+    padding: 8px 10px;
+    background-color: #f3e4b2;
+    color: #3d2e1f;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: auto;
+    transition: background-color 0.3s;
+    position: relative;
+    right: -5px;
+    bottom: -5px;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  .modal-overlay.is-open {
+    display: flex;
+  }
+
+
+}
+
+
+
+@media (min-width: 600px) and (max-width: 768px) {
+
+  .grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Uma coluna por linha */
+    justify-items: center;
+    /* Centraliza os cards na grid */
+    gap: 10px;
+    /* Espaço entre os cards */
+  }
+
+  .produtos {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .produtos h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-style: italic;
+    color: #3d2e1f;
+  }
+
+  .btn-adicionar:hover {
+    background-color: #e6d894;
+  }
+
+  .card-produto {
+    background-color: #a68c78;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 360px;
+    width: 90%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease;
+    box-sizing: border-box;
+    margin-top: 30px;
+  }
+
+  .img-produto img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #fff;
+    display: block;
+  }
+
+  .card-produto p {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .btn-vermais {
+    background-color: #f1e6b5;
+    color: #3d2e1f;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 20px;
+    margin: 20px;
+  }
+
+  .modal-produto {
+    background-color: #f8efb5;
+    border-radius: 20px;
+    padding: 15px;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .modal_img {
+    background-color: white;
+    width: 75%;
+    height: 180px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    /* Centraliza horizontalmente */
+  }
+
+  .modal_img img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .fechar-modal {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .modal_itens {
+    background-color: #a68c78;
+    border-radius: 15px;
+    flex: 1;
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .DcrModal {
+    font-size: 13px;
+    color: white;
+    text-align: center;
+  }
+
+  .quantidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  .quantidade button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    background-color: #f3e4b2;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  #quantidade-valor {
+    background-color: white;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+    color: #3d2e1f;
+  }
+
+  .btn-adicionar {
+    padding: 8px 10px;
+    background-color: #f3e4b2;
+    color: #3d2e1f;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: auto;
+    transition: background-color 0.3s;
+    position: relative;
+    right: -5px;
+    bottom: -5px;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  .modal-overlay.is-open {
+    display: flex;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+
+  .grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* Uma coluna por linha */
+    justify-items: center;
+    /* Centraliza os cards na grid */
+    gap: 20px;
+    /* Espaço entre os cards */
+  }
+
+  .produtos {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .produtos h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-style: italic;
+    color: #3d2e1f;
+  }
+
+  .card-produto {
+    background-color: #a68c78;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    max-width: 360px;
+    width: 90%;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease;
+    box-sizing: border-box;
+    margin-top: 30px;
+  }
+
+  .img-produto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #fff;
+    display: block;
+  }
+
+  .card-produto p {
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+  }
+
+  .btn-vermais {
+    background-color: #f1e6b5;
+    color: #3d2e1f;
+    border: none;
+    padding: 8px 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 20px;
+    margin: 15px;
+  }
+
+  /* Modal dos produtos*/
+
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  .modal-overlay.is-open {
+    display: flex;
+  }
+
+  .modal-produto {
+    background-color: #f8efb5;
+    border-radius: 20px;
+    padding: 15px;
+    width: 90%;
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .modal_img {
+    background-color: white;
+    width: 100%;
+    height: 180px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal_img img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .modal_itens {
+    background-color: #a68c78;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .nomeModal {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .DcrModal {
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .modalPreco {
+    font-weight: bold;
+    font-size: 15px;
+    color: #f3e4b2;
+    text-align: center;
+  }
+
+  .quantidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  .quantidade button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    background-color: #f3e4b2;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  #quantidade-valor {
+    background-color: white;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+    color: #3d2e1f;
+  }
+
+  .btn-adicionar {
+    padding: 10px 20px;
+    background-color: #f3e4b2;
+    color: #3d2e1f;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+    margin-top: 10px;
+  }
+
+  .btn-adicionar:hover {
+    background-color: #e6d894;
+  }
+
+  .fechar-modal {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+}
