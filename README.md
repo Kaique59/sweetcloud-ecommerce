@@ -1,7 +1,3 @@
-<div align="center">
-  <img src="https://cdn-icons-png.flaticon.com/512/2569/2569198.png" width="120" alt="Ícone Bolo"/>
-</div>
-
 # ☁️ SweetCloud E-commerce
 
 **Site institucional e promocional da confeitaria SweetCloud**, criado com o objetivo de atrair novos clientes, apresentar produtos artesanais e facilitar o contato para encomendas.
